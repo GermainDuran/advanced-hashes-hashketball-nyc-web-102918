@@ -189,6 +189,7 @@ end
 
 def player_stats(player_name)
 find_the_player(player_name).reject { |key, value| key == :player_name }
+#Returns an array for all elements of enum for which block is false la condicion en parantesis
 end
 
 def find_the_player(name)
