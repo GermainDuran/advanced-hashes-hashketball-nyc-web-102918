@@ -133,7 +133,8 @@ end
 def shoe_size(player_name)
 player = find_the_player(player_name)
 player.fetch(:shoe)
-
+# Retorna un valor del hash dada la key. 
+#utilizo el metodo find_the_player que me retorna el jugador si hace match en nuestro hash
 end
    
 def num_points_scored(name)
@@ -141,11 +142,14 @@ player = find_the_player(name)
 player.fetch(:points)
 
 # Retorna un valor del hash dada la key. 
+# es otra manera de hacer est metodo solo que utilizo .fetch que me retorna de una vez el valor de points 
 end
 
 def team_colors(team_name)
 team = find_the_team(team_name)
 team.fetch(:colors)
+
+#primero encuentro el team con el metodo find_the_team pero este metodo me garantiza que hizo match y luego basicamente hago lo mismo con .fetch
 end
 
 def teams
