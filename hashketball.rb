@@ -131,8 +131,8 @@ def num_points_scored(player_name)
 end
    
 def shoe_size(player_name)
-player = find_the_player(player_name)
-player.fetch(:shoe)
+  player = find_the_player(player_name)
+  player.fetch(:shoe)
 # Retorna un valor del hash dada la key. 
 #utilizo el metodo find_the_player que me retorna el jugador si hace match en nuestro hash
 end
