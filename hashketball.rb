@@ -187,9 +187,9 @@ player[:number]
 end
 end
 
-#def player_stats(player_name)
-#find_the_player(player_name).reject { |key, value| key == :player_name }
-#end
+def player_stats(player_name)
+find_the_player(player_name).reject { |key, value| key == :player_name }
+end
 
 def find_the_player(name)
 players.find {|player| player.fetch(:player_name) == name}
