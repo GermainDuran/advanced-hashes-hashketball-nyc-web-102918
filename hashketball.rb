@@ -119,7 +119,8 @@ def game_hash
 end
 
 def num_points_scored(player_name)
-
+  #este metodo retorna el numero de puntos para el jugador que entro como  argumento en el metodo. utilizo each para irme moviendo en cada nivel hasta encontrar la key que busco que es points 
+  
   game_hash.each do |team, team_data|
      team_data[:players].each do |player|
        if player[:player_name] == player_name
